@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap");   /*9 */
+
+
+*{                                          /*  10 o * significa que será aplicado a todos os elementos do nosso site*/
+    box-sizing: border-box;
+}
+
+body{   /*zerar a margem do body pois tem margem de 8px inicialmente*/
+margin: 0px;
+font-family: 'IM Fell Great Primer SC', serif;
+width: 100vw;
+}
+.lil{
+    width: 400px;
+    height: 10px;
+    margin-top: -3px;
+    font-size: 12px;
+}
+button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight:bold;
+    border: 0;
+    background: #762a2e;
+    color: white ;
+}
+
+header{
+    height: calc(100vh - 0px); 
+    background: no-repeat center/cover url("amazon2.jpg");
+    object-fit: cover;
+    
+   
+}
+
+header nav{     /*5 usaremos o nav(pai do ul e img(logo) para deixa-los lado a lado*/
+    display: flex;  /*6 vao deixar os filhos flexiveis*/
+    justify-content: space-between;   /*7  deixaram distantes um do outro*/
+    margin: auto 30px ;   /*8 margem para nao ficar tao colado nas paredes*/
+    font-size: 1.5rem;
+}
+header nav p{
+    font-weight:bold ;
+}   
+
+ul{
+    list-style: none; 
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav ul{
+    list-style: none;   /*1 REMOVE OS PONTINHOS CARASCTERISTICOS DA UL*/  
+    display: flex;    /*2 DEFININDO O FLEX*/
+    
+}
+
+header nav ul li{
+    margin: 0 15px; /*4  0 de margem em cima e baixo e 15 na esquerda e direita*/
+}
+
+.header-content{
+    max-width:400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header-content h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+                                                    /*TUDO DAI DE CIMA FOI SO DO CABEÇALHO*/
+.pacotes{
+padding: 15px;
+background: #e5e5e5;
+}
+
+.pacotes .pacotes-cards{
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.pacotes .pacotes-title{                                    /*TITULO PACOTES*/
+    width: 100%;
+    margin: 25px 0;
+    text-align: center;
+
+    
+}
+.pacotes .card{    /*DEFININDO AS CORES E TAMANHO DOS CARDS*/
+    width: 250px;
+    height: 350px;
+    background:white;      <!--cornflowerblue;-->
+    border-radius: 7px;  
+    margin: 25px; 
+    border-radius: 8px;   
+    position: relative;
+}
+.pacotes .card:hover{
+    outline: dotted red;
+    background: gold;
+}
+.pacotes .card h1{
+    text-align: center;
+    font-size: 1rem; 
+} 
+.pacotes .card-imagem{
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.pacotes .card-content{
+    padding: 0 15px;
+}    
+.pacotes .card-content ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;   /*remover as caracteristicas de lista (bolinhas)*/ 
+    padding: 0;
+}
+.pacotes .card-content ul li{
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    color: grey;
+    font-weight: bold;
+}
+.pacotes .card-content li svg{
+    width: 16px;
+    height: 16px ;
+    margin-right: 10px;
+     
+}
+.pacotes .card-content h1{
+    font-size: 1rem;
+}
+.pacotes .card .card-tag{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #f19b39;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+.pacotes .card .card-tag p{
+    margin: 0;
+    font-size: .8rem;
+    color:white;
+    font-weight: bold;
+}
+
+.pacotes .card .card-bottom{
+    position: absolute;
+    left: 0;
+    top:160px;
+    background:#1d61dd ;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+.pacotes .card .card-bottom p{
+    
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.servicos{                                         /*section SERVICOS*/
+    padding: 15px ;
+}
+.servicos .servicos-title {
+    text-align: center;
+    margin: 35px 0;
+}
+.servicos .servicos-cards{
+    margin-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    flex-wrap: wrap;
+
+
+}
+
+
+.servicos .card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    align-items: center;
+}
+.servicos .card svg{                            /*NAO ENTENDI ESSE SVG*/
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+    transition: all 1s;
+
+}
+.servicos .card svg:hover{
+    stroke: #1d61dd;
+    transform: scale(1.1);
+
+}     
+.servicos .card h3{                            /*NAO ENTENDI ESSE SVG*/
+    font-weight: bold;
+
+}
+.servicos .card p{
+    color: grey;
+    font-size: 1rem;
+    text-align: center;
+
+}
+.servicos .card .card-content{
+    height: 180px;
+    text-align: center;
+}
+
+button{
+    background: #762a2e;
+}
+
+
+.contato .map {
+
+    height: 400px;
+    width: 100%;
+  }
+.contato{
+    padding: 60px 12%;
+    background:#e1e8f7;
+    position: relative;
+}
+.contato .contato-card{
+    width: 350px ;
+    height: 300px;
+    background: white;
+    position: absolute;
+    z-index: 99 ;
+    top: calc(50% - 150px);
+    left:calc(20% - 175px);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .60);
+}
+.contato .contato-card h1{
+    
+    text-align: left;
+    padding-left: 50px;
+}
+.contato .contato-card li{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    align-items: center;
+
+}
+.contato .contato-card li svg{
+    width: 16px;
+    margin: 10px;
+
+
+}
+footer{
+    text-align: center;
+    background: white;
+}
+
+                                                                /*RESPONSIVIDADE*/ 
+@media (max-width: 950px){    /*especial para mapa*/
+   .contato{
+       padding: 60px 0;
+   }
+   .contato .contato-card{
+       left: 40px;
+   }
+
+}
+@media (max-width: 800px){    
+  
+    .contato .contato-card{
+        position: static;
+        margin: 40px auto;
+          
+    }
+}
+
+@media (max-width: 767px){    
+   
+}
+
+
+@media (max-width: 480px){    /*celulares e menores*/
+    body{
+        margin-bottom: 55px;
+    }
+
+    header nav ul{                                           /*NAV MENU*/
+        position: fixed;  /*posicao fixada*/
+        bottom: 0;  /*grudado em baixo*/
+        left: 0;  /*grudado a esquerda*/
+        width: 100%;  /*largura*/
+        padding:0;
+        margin: 0;
+        background: #1d61dd;
+        height: 55px;   /*altura desta caixa*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-weight: bold;    /*NEGRITO*/
+
+        z-index:100;
+    }
+    header nav p{                                            /*TITULO*/
+        width: 100%;   /*largura: ocupe a tela inteira*/
+        text-align: center;
+    }
+    
+
+}
